@@ -1,7 +1,9 @@
 # nvim-markdown-grammarly
-Minimal nvim all lua config for Markdown with Grammarly
+Minimal nvim lua config for Markdown with Grammarly
 
 ## Requirements
+
+Use the VS Code Grammarly plugin:
 
 - clone [znck/grammarly](https://github.com/znck/grammarly)
 - run the install and build commands:
@@ -44,9 +46,10 @@ Minimal nvim all lua config for Markdown with Grammarly
   
   {"jsonrpc":"2.0","method":"window/logMessage","params":{"type":4,"message":"Ready!"}}^C
   ```
+## Configure neovim
 
 - remove $HOME/.config/nvim
 - link this repo to $HOME/.config/nvim
-- edit my_config.lua and set the grammarly LSP cmd (using the one you just built in the znck dir)
-- edit a markdown file. You should see marks in the far left column indicating grammar and spelling errors. Navigate through the errors with `]d`
+- edit `lua/grammarly.lua` and set the Grammarly LSP cmd (using the one you just built in the `znck/grammarly` dir)
+- edit a markdown file (this one will show some issues). You should see marks in the far left column indicating grammar and spelling errors. Navigate through the errors with `]d`
 
