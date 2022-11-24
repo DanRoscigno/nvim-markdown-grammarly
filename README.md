@@ -54,4 +54,5 @@ Use the VS Code Grammarly plugin:
 
 ## Test
 - edit a markdown file (this one will show some issues). You should see marks in the far left column indicating grammar and spelling errors. Navigate through the errors with `]d`
-- add a link to a non-existent markdown file, for example [foogle](./foogle.md).  This will show as a warning from Marksman.
+- add a link to a non-existent markdown file, for example, `[foo](./foo.md)`.  This will show as a warning from Marksman if you add it outside of a code block.
+[foo](./foo.md)
