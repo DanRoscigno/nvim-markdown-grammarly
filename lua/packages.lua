@@ -1,9 +1,11 @@
 -- plugins
 require "paq" {
-    "savq/paq-nvim";                  -- Let Paq manage itself
+    "savq/paq-nvim";           -- Package manager
 
-    "neovim/nvim-lspconfig";          -- Mind the semi-colons
+    "neovim/nvim-lspconfig";   -- Support configuring LSPs
 
-    "artempyanykh/marksman"           -- Markdown
+    "artempyanykh/marksman";   -- Markdown LSP
+
+    "lewis6991/gitsigns.nvim"  -- show git status
 
 }
