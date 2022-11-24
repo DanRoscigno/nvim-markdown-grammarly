@@ -1,6 +1,6 @@
 require('lualine').setup {
   options = {
-    icons_enabled = true,
+    icons_enabled = false,
     theme = 'auto',
     component_separators = { left = '', right = ''},
     section_separators = { left = '', right = ''},
@@ -18,18 +18,17 @@ require('lualine').setup {
     }
   },
   sections = {
-    lualine_a = {'mode'},
-    lualine_b = {'branch', 'diff'},
-    lualine_c = {'filename'},
-    lualine_x = {'encoding', 'fileformat', 'filetype'},
-    lualine_y = {'progress'},
-    lualine_z = {'location'}
+    lualine_a = {'branch', 'diff'},
+    lualine_b = {'filename'},
+    lualine_x = {},
+    lualine_y = {'filetype'},
+    lualine_z = {'progress'}
   },
   inactive_sections = {
     lualine_a = {},
-    lualine_b = {},
-    lualine_c = {'filename'},
-    lualine_x = {'location'},
+    lualine_b = {'filename'},
+    lualine_c = {},
+    lualine_x = {},
     lualine_y = {},
     lualine_z = {}
   },
@@ -38,18 +37,3 @@ require('lualine').setup {
   inactive_winbar = {},
   extensions = {}
 }
---require('lualine').setup()
---vim.cmd([[
---set statusline=
---set statusline+=%#PmenuSel#
---set statusline+=%{get(b:,'gitsigns_head','')}
---set statusline+=\ 
---set statusline+=%{get(b:,'gitsigns_status','')}
---set statusline+=%#LineNr#
---set statusline+=%#PmenuSel#
---set statusline+=\ %t
---set statusline+=\ %m
---set statusline+=%=
---set statusline+=%#CursorColumn#
---set statusline+=\ %p%%
---]])
