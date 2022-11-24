@@ -4,7 +4,7 @@ Minimal nvim all lua config for Markdown with Grammarly
 ## Requirements
 
 - clone [znck/grammarly](https://github.com/znck/grammarly)
-- run the commands to install and build:
+- run the install and build commands:
   ```bash
   pnpm install
   pnpm run build
@@ -13,7 +13,7 @@ Minimal nvim all lua config for Markdown with Grammarly
   ```bash
   pnpm test
   ```
-  ```response
+  ```text
   > @ test /home/droscigno/GitHub/grammarly
   > jest
 
