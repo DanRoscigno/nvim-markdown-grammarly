@@ -1,4 +1,5 @@
 require('settings')
+require('statusline')
 require('packages')
 require('marksman')
 require('grammarly')

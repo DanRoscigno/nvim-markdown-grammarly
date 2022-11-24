@@ -4,26 +4,32 @@ vim.diagnostic.config(
   -- Grammarly default is to show the issue at the end
   -- of the line (virtual text), I prefer it in a float,
   -- so turn off the virtual text
-  virtual_text = false,
+  virtual_text     = false,
+
+  -- I prefer the signs column to indicate github status
+  -- so set signs to false (I rely on the underline to 
+  -- tell me that there is a diagnostic for a line)
+  signs            = false,
+
   update_in_insert = true,
-  underline = true,
-  severity_sort = true,
+  underline        = true,
+  severity_sort    = true,
   float = {
     focusable = false,
-    style = "minimal",
-    border = "rounded",
+    style     = "minimal",
+    border    = "rounded",
 
     -- show the name of the LSP
-    source = "always",
+    source    = "always",
 
     -- set header to nothing to avoid
     -- a line reading "Diagnostics:"
-    header = "",
+    header    = "",
 
     -- Set prefix to nothing to avoid
     -- numbering multiple errors on a
     -- phrase
-    prefix = "",
+    prefix    = "",
   },
 })
 
