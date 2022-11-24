@@ -51,5 +51,7 @@ Use the VS Code Grammarly plugin:
 - remove $HOME/.config/nvim
 - link this repo to $HOME/.config/nvim
 - edit `lua/grammarly.lua` and set the Grammarly LSP cmd (using the one you just built in the `znck/grammarly` dir)
-- edit a markdown file (this one will show some issues). You should see marks in the far left column indicating grammar and spelling errors. Navigate through the errors with `]d`
 
+## Test
+- edit a markdown file (this one will show some issues). You should see marks in the far left column indicating grammar and spelling errors. Navigate through the errors with `]d`
+- add a link to a non-existent markdown file, for example [foogle](./foogle.md).  This will show as a warning from Marksman.
