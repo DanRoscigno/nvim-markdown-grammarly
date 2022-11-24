@@ -1,9 +1,9 @@
 
 vim.diagnostic.config(
  {
-  -- Grammarly default is to show the issue
-  -- at the end of the line, I prefer it in
-  -- a float, so turn off the virtual text
+  -- Grammarly default is to show the issue at the end
+  -- of the line (virtual text), I prefer it in a float,
+  -- so turn off the virtual text
   virtual_text = false,
   update_in_insert = true,
   underline = true,
@@ -12,8 +12,18 @@ vim.diagnostic.config(
     focusable = false,
     style = "minimal",
     border = "rounded",
+
+    -- show the name of the LSP
     source = "always",
+
+    -- set header to nothing to avoid
+    -- a line reading "Diagnostics:"
     header = "",
+
+    -- Set prefix to nothing to avoid
+    -- numbering multiple errors on a
+    -- phrase
+    prefix = "",
   },
 })
 
