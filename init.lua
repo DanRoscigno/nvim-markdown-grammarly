@@ -1,7 +1,7 @@
 require('settings')
-require('statusline')
 require('packages')
 require('marksman')
 require('grammarly')
 require('diagnostics')
 require('git')
+require('statusline')
