@@ -6,8 +6,6 @@ require "paq" {
 
     "artempyanykh/marksman";    -- Markdown LSP
 
-    "lewis6991/gitsigns.nvim";  -- show git status
-
-    "nvim-lualine/lualine.nvim" -- statusline
+    "lewis6991/gitsigns.nvim"   -- show git status
 
 }
